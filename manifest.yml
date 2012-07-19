@@ -1,0 +1,15 @@
+---
+applications:
+  .:
+    name: happy-birthday-openstack-from-geeknest
+    framework:
+      name: standalone
+      info:
+        mem: 64M
+        description: Standalone Application
+        exec: 
+    runtime: ruby193
+    command: ruby app.rb -p $VCAP_APP_PORT
+    url: http://happy-birthday-openstack-from-geeknest.aws.af.cm/
+    mem: 256M
+    instances: 1
